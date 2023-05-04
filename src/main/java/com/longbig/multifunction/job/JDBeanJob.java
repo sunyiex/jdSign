@@ -69,7 +69,7 @@ public class JDBeanJob {
      *
      * @return
      */
-    @Scheduled(cron = "0 0 6 1/1 * ?")
+    @Scheduled(cron = "0 0 6,18 1/1 * ?")
     public String getJdSign() throws Exception {
         String url = "https://api.m.jd.com/client.action?functionId=signBeanAct&body=%7B%22fp%22%3A%22-1%22%2C%22shshshfp%22%3A%22-1%22%2C%22shshshfpa%22%3A%22-1%22%2C%22referUrl%22%3A%22-1%22%2C%22userAgent%22%3A%22-1%22%2C%22jda%22%3A%22-1%22%2C%22rnVersion%22%3A%223.9%22%7D&appid=ld&client=apple&clientVersion=10.0.4&networkType=wifi&osVersion=14.8.1&uuid=3acd1f6361f86fc0a1bc23971b2e7bbe6197afb6&openudid=3acd1f6361f86fc0a1bc23971b2e7bbe6197afb6&jsonp=jsonp_1645885800574_58482";
         String body = "{\"eid\":\"eidAb47c8121a5s24aIy0D0WQXSKdROGt9BUSeGiNEbMeQodwSwkLi6x5/GTFC7BV7lPMjljpMxVNCcAW/qdrQvDSdhaI5715Sui3MB7nluMccMWqWFL\",\"fp\":\"-1\",\"jda\":\"-1\",\"referUrl\":\"-1\",\"rnVersion\":\"4.7\",\"shshshfp\":\"-1\",\"shshshfpa\":\"-1\",\"userAgent\":\"-1\"}";
@@ -91,7 +91,7 @@ public class JDBeanJob {
      *
      * @return
      */
-    @Scheduled(cron = "0 0 7 1/1 * ?")
+    @Scheduled(cron = "0 0 7,19 1/1 * ?")
     public String getSharkBean() throws Exception {
         log.info("摇京豆签到开始");
         int n = 0;
@@ -120,7 +120,7 @@ public class JDBeanJob {
      *
      * @return
      */
-    @Scheduled(cron = "0 0 8 1/1 * ?")
+    @Scheduled(cron = "0 0 8,20 1/1 * ?")
     public String getLottery() throws Exception {
         String url = "https://api.m.jd.com/client.action?functionId=babelGetLottery";
         String body = "{\"enAwardK\":\"ltvTJ/WYFPZcuWIWHCAjRz/NdrezuUkm8ZIGKKD06/oaqi8FPY5ILISE5QLULmK6RUnNSgnFndqy\\ny4p8d6/bK/bwdZK6Aw80mPSE7ShF/0r28HWSugMPNPm5JQ8b9nflgkMfDwDJiaqThDW7a9IYpL8z\\n7mu4l56kMNsaMgLecghsgTYjv+RZ8bosQ6kKx+PNAP61OWarrOeJ2rhtFmhQncw6DQFeBryeMUM1\\nw9SpK5iag4uLvHGIZstZMKOALjB/r9TIJDYxHs/sFMU4vtb2jX9DEwleHSLTLeRpLM1w+RakAk8s\\nfC4gHoKM/1zPHJXq1xfwXKFh5wKt4jr5hEqddxiI8N28vWT05HuOdPqtP+0EbGMDdSPdisoPmlru\\n+CyHR5Kt0js9JUM=_babel\",\"awardSource\":\"1\",\"srv\":\"{\\\"bord\\\":\\\"0\\\",\\\"fno\\\":\\\"0-0-2\\\",\\\"mid\\\":\\\"70952802\\\",\\\"bi2\\\":\\\"2\\\",\\\"bid\\\":\\\"0\\\",\\\"aid\\\":\\\"01155413\\\"}\",\"encryptProjectId\":\"3u4fVy1c75fAdDN6XRYDzAbkXz1E\",\"encryptAssignmentId\":\"2x5WEhFsDhmf8JohWQJFYfURTh9w\",\"authType\":\"2\",\"riskParam\":{\"platform\":\"3\",\"orgType\":\"2\",\"openId\":\"-1\",\"pageClickKey\":\"Babel_WheelSurf\",\"eid\":\"eidI69b381246dseNGdrD6vtTrOauSQ/zRycuDRnbInWZmVfFbyoI59uVkzYYiQZrUGzGkpqNpHHJHv37CthY6ooTnYpqX2mBZ2riJHvc8c9kta1QpZh\",\"fp\":\"-1\",\"shshshfp\":\"98d7f7d062531be7af606b13b9c57a3e\",\"shshshfpa\":\"2768c811-4a2f-1596-cf01-9d0cbd0319b9-1651280386\",\"shshshfpb\":\"iMZyawmZjTHrSJ72sZmuHog\",\"childActivityUrl\":\"https%3A%2F%2Fpro.m.jd.com%2Fmall%2Factive%2F2xoBJwC5D1Q3okksMUFHcJQhFq8j%2Findex.html%3Ftttparams%3DjyJinIeyJnTG5nIjoiMTE2LjQwNjQ1IiwiZ0xhdCI6IjQwLjA2MjkxIn60%253D%26un_area%3D1_2901_55565_0%26lng%3D116.4065317104862%26lat%3D40.06278498159455\",\"userArea\":\"-1\",\"client\":\"\",\"clientVersion\":\"\",\"uuid\":\"\",\"osVersion\":\"\",\"brand\":\"\",\"model\":\"\",\"networkType\":\"\",\"jda\":\"-1\"},\"siteClient\":\"apple\",\"mitemAddrId\":\"\",\"geo\":{\"lng\":\"116.4065317104862\",\"lat\":\"40.06278498159455\"},\"addressId\":\"5777681655\",\"posLng\":\"\",\"posLat\":\"\",\"homeLng\":\"116.40645\",\"homeLat\":\"40.06291\",\"focus\":\"\",\"innerAnchor\":\"\",\"cv\":\"2.0\"}";
@@ -152,7 +152,7 @@ public class JDBeanJob {
      * @return
      * @throws IOException
      */
-    @Scheduled(cron = "0 0 9 1/1 * ?")
+    @Scheduled(cron = "0 0 9,21 1/1 * ?")
     public String plusSign() throws Exception {
         String url = "https://api.m.jd.com/client.action?functionId=doInteractiveAssignment";
         String body = "{\"sourceCode\":\"acetttsign\",\"encryptProjectId\":\"3FCTNcsr7BoQUw7dx1h3KJ9Hi9yJ\",\"encryptAssignmentId\":\"3o2cWjTjZoCjKJcQwQ2bFgLkTnZC\",\"completionFlag\":true,\"itemId\":\"1\",\"extParam\":{\"forceBot\":\"1\",\"businessData\":{\"random\":\"LLSuE5uy\"},\"signStr\":\"1651280954835~1OgLu20Tq0QMDFGRlluRzk5MQ==.d3BsX3V+dmBadHV2bxBxf3NgXyYAczZfOXdqb0J2ancnXDl3ODYjLgosPAp3dTMVMRUnFxMWKQwxKAkWOA==.6aac9775~1,1~18BD8887199573132F7270C7423274FE2B819200~1yxx4at~C~TRNMWhYJbWwUFUBdWxMCbBZXAxx6eRhydB0BBGYfBx8IBwQfQhMUFVAEG3N2G3VxGggOfhgCGAEIBxhHFGwUFVNBWBMCBhgRRUIaDRYCAAQJBQwDDwULBwMLDwMAAxYfFEZdUxYJFEVMQ0BHUEReFRgRQVRZFQ4RUFdMQ0FHQ1AaGxZDUl8aDW8ABB0JDgMfBwIUDhgCAx0JahgRXFsaDQUfFFJLFQ4RUwkOBVYHVwMMBABRUAIODlBRV1QMAgIBAwELBARRAVAaGxZdRhMCFXlSVXhWQ1FfFB0aQxYJBwcNBgYLBggNAwwAAx0aXV8RDBNZFRgRUEFaFQ4RWXxRe15WUgELQnhsZFBpfUxdfEZJUGURGhNWQRYJFHZXWFNfUxFxWVcdFB0aWVVFFAsaVBYfFEJbRRYJbQkKDhgGBgFlGxZBWRMCbBZSFB0aVhYfFFAaGxZSFB0aVhYfFFAaGxZSFGwUFV1cVxMCFVJVUFdeUUBHFB0aVl4RDBNNFRgRVVgaDRZEBR8NGQYRGhNbUWtFFAsaDg0RGhNaUxYJFENZWVBcWwx0e2dGcwRNThYfFFxSFQ5oBx0IGwRuGhNaW1tUFAsaVhYfFFxLUBYJFFAaSg==~1cs6hu7\",\"sceneid\":\"babel_3joSPpr7RgdHMbcuqoRQ8HbcPo9U\"},\"activity_id\":\"3joSPpr7RgdHMbcuqoRQ8HbcPo9U\",\"template_id\":\"00019605\",\"floor_id\":\"75471325\",\"enc\":\"A4737E261D02E91C30C566C1C671734D124B75F8759F591EFAFB127342C10708BAA7D80C309F2B17973BB15312D14004B865E9A1F04C7C3E3E312AA7309E7B31\"}";

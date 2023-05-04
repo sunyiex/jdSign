@@ -5,7 +5,7 @@ MAINTAINER longbig
 #暴漏容器的8080端口
 EXPOSE 8080
 #将复制指定的docker-demo-0.0.1-SNAPSHOT.jar为容器中的job.jar，相当于拷贝到容器中取了个别名
-ADD ./jar/application.jar /application.jar
+ADD ./target/application.jar /application.jar
 #创建一个新的容器并在新的容器中运行命令
 #RUN bash -c 'touch /application.jar'
 #设置时区
